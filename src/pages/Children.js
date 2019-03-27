@@ -25,7 +25,7 @@ import { Badge, Card, CardBody, CardHeader, Col, Row, Table } from 'reactstrap';
 // import { Badge, Card, CardBody, CardHeader, Col, Pagination, PaginationItem, PaginationLink, Row, Table } from 'reactstrap';
 import participents from "../db/participents.json";
 
-class Tables extends Component {
+class Children extends Component {
 
   isActive(behave_submission, medic_submission) {
     var lastWeek = moment().subtract(7,'d').format('YYYY-MM-DDTHH:mm:ss.SSSZ');
@@ -101,4 +101,4 @@ class Tables extends Component {
   }
 }
 
-export default Tables;
+export default Children;
