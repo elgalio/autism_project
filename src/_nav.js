@@ -11,7 +11,7 @@ export default {
     },
     {
       name: 'אנומליות',
-      url: '/pages/Anomalies',
+      url: '/Anomalies',
       icon: 'icon-speedometer',
       badge: {
         variant: 'info',
@@ -20,7 +20,7 @@ export default {
     },
     {
       name: 'רשימת הילדים',
-      url: '/pages/Participents',
+      url: '/Participents',
       icon: 'icon-speedometer',
       badge: {
         variant: 'info',
@@ -56,27 +56,27 @@ export default {
     // },
     {
       name: 'לפי שאלון',
-      url: '/base',
+      url: '/pages/Questionnaires',
       icon: 'icon-puzzle',
       children: [
         {
-          name: 'Breadcrumbs',
-          url: '/base/breadcrumbs',
+          name: 'הכרות רפואי - חלק א',
+          url: '/Questionnaires/Intro1',
           icon: 'icon-puzzle',
         },
         {
-          name: 'Cards',
-          url: '/base/cards',
+          name: 'הכרות רפואי - חלק ב',
+          url: '/Questionnaires/Intro2',
           icon: 'icon-puzzle',
         },
         {
-          name: 'Carousels',
-          url: '/base/carousels',
+          name: 'שאלון התנהגותי שבועי',
+          url: '/Questionnaires/Behaviour',
           icon: 'icon-puzzle',
         },
         {
-          name: 'Collapses',
-          url: '/base/collapses',
+          name: 'שאלון רפואי שבועי',
+          url: '/Questionnaires/Medical',
           icon: 'icon-puzzle',
         },
         // {

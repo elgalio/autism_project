@@ -23,10 +23,6 @@ const ButtonDropdowns = React.lazy(() => import('./views/Buttons/ButtonDropdowns
 const ButtonGroups = React.lazy(() => import('./views/Buttons/ButtonGroups'));
 const Buttons = React.lazy(() => import('./views/Buttons/Buttons'));
 const Charts = React.lazy(() => import('./views/Charts'));
-
-
-const Anomalies = React.lazy(() => import('./pages/Anomalies'));
-
 const CoreUIIcons = React.lazy(() => import('./views/Icons/CoreUIIcons'));
 const Flags = React.lazy(() => import('./views/Icons/Flags'));
 const FontAwesome = React.lazy(() => import('./views/Icons/FontAwesome'));
@@ -40,22 +36,32 @@ const Widgets = React.lazy(() => import('./views/Widgets/Widgets'));
 const Users = React.lazy(() => import('./views/Users/Users'));
 const User = React.lazy(() => import('./views/Users/User'));
 
+
+
+
+const Anomalies = React.lazy(() => import('./pages/Anomalies'));
+const Children = React.lazy(() => import('./pages/Children'));
+
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
   { path: '/', exact: true, name: 'Home', component: DefaultLayout },
-  { path: '/dashboard', name: 'אנומליות', component: Anomalies },
   { path: '/theme', exact: true, name: 'Theme', component: Colors },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
-  { path: '/base', exact: true, name: 'Base', component: Cards },
-  { path: '/base/cards', name: 'Cards', component: Cards },
+
+  { path: '/Anomalies', name: 'אנומליות', component: Anomalies },
+  { path: '/Participents', name: 'רשימת הילדים', component: Children },
+  { path: '/Questionnaires', exact: true, name: 'שאלונים', component: Cards },
+  { path: '/Questionnaires/Intro1', name: 'הכרות רפואי - חלק א', component: Breadcrumbs },
+  { path: '/Questionnaires/Intro2', name: 'הכרות רפואי - חלק ב', component: Cards },
+  { path: '/Questionnaires/Behaviour', name: 'התנהגותי שבועי', component: Carousels },
+  { path: '/Questionnaires/Medical', name: 'רפואי שבועי', component: Collapses },
+
+
   { path: '/base/forms', name: 'Forms', component: Forms },
   { path: '/base/switches', name: 'Switches', component: Switches },
   { path: '/base/tables', name: 'Tables', component: Tables },
   { path: '/base/tabs', name: 'Tabs', component: Tabs },
-  { path: '/base/breadcrumbs', name: 'Breadcrumbs', component: Breadcrumbs },
-  { path: '/base/carousels', name: 'Carousel', component: Carousels },
-  { path: '/base/collapses', name: 'Collapse', component: Collapses },
   { path: '/base/dropdowns', name: 'Dropdowns', component: Dropdowns },
   { path: '/base/jumbotrons', name: 'Jumbotrons', component: Jumbotrons },
   { path: '/base/list-  groups', name: 'List Groups', component: ListGroups },
